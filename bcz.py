@@ -39,10 +39,11 @@ header = { "User-Agent" : UA,
 note_session = requests.Session()
 f = note_session.get(login,headers=header)
 soup = BeautifulSoup(f.content,"html.parser")
+#自己替换用户名和密码
 postData = { 
             'authenticity_token':'5o79vrUx0jMKnHXqhwHAzK35T0Rn9lCl/GV1L8wH4jM=',
-            'email':'1529806383@qq.com',
-            'raw_pwd':'wsyzwn123',
+            'email':'###',
+            'raw_pwd':'###',
             'remember_me':0
              }
 note_session.post(login,
